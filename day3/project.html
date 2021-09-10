@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO-DO List</title>
+    <style>
+        body{
+            background-image: url("https://media.istockphoto.com/photos/timeline-planning-checklist-or-business-plan-with-calendar-date-on-picture-id1211255735?k=20&m=1211255735&s=612x612&w=0&h=eT_yt1ZzUGw053m8ycranQWs8-kL0VDv67DrqfxNGxw=");
+        }
+        .content{
+            padding:50px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .to{
+            padding-top: 50px;
+            padding-bottom: 50px;
+            width: 400px;
+        }
+        input{
+            height: 20px;
+            width: 25%;
+            border: 1px solid;
+            border-radius:10px;
+            font-size: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-indent: 20px;
+        }
+        button{
+            margin-top: 10px;
+            margin-bottom:10px;
+            width: 15%;
+            font-size: 20px;
+            text-transform: uppercase;
+            cursor: pointer;
+            border-radius: 25px;
+        }
+        .task{
+            padding-top: 10px;
+            padding-bottom: 10px;
+            margin:10px;
+            text-indent: 20px;
+            font-size: 25px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana;
+            font-style: normal;
+            box-shadow: 0 0 2px solid black;
+            border-radius: 10px;
+            text-transform: capitalize;
+        }
+    
+    </style>
+</head>
+<body>
+   <div class="content">
+    <input type="text" , placeholder="Task...." , id="inp"/>
+    <br>
+    <button onclick="addTask()">Add Task</button>
+    <button onclick="removeTask()">Clear Task</button>
+    <div id="two" class="to">
+    </div>
+  
+
+
+
+   </div>
+   <script src="project.js"></script>
+</body>
+</html>
